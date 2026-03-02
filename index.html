@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>User Management System | Node.js + MongoDB API</title>
+
+    <meta
+      name="description"
+      content="A modern User Management System built with Node.js, Express, and MongoDB. Create, update, delete and manage users using REST API."
+    />
+
+    <meta
+      name="keywords"
+      content="Node.js project, MongoDB project, REST API project, User management system, Express backend project"
+    />
+
+    <meta name="author" content="Yash Kumawat" />
+
+    <meta name="robots" content="index, follow" />
+
+    <!-- Open Graph for Social Sharing -->
+    <meta
+      property="og:title"
+      content="User Management System - Node.js REST API"
+    />
+    <meta
+      property="og:description"
+      content="Modern full-stack project using Express and MongoDB."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://user-management-ui.vercel.app" />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>User Management System</h1>
+
+      <div class="card">
+        <form id="userForm">
+          <input
+            type="text"
+            id="first_name"
+            placeholder="First Name"
+            required
+          />
+          <input type="text" id="last_name" placeholder="Last Name" required />
+          <input type="email" id="email" placeholder="Email" required />
+          <input type="text" id="gender" placeholder="Gender" required />
+          <input type="text" id="job_title" placeholder="Job Title" required />
+          <button class="btn-primary" type="submit">Add User</button>
+        </form>
+      </div>
+
+      <div class="card">
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Gender</th>
+              <th>Job</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody id="userTable"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

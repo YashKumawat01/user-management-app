@@ -1,0 +1,97 @@
+* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Segoe UI", sans-serif;
+      }
+
+      body {
+        background: #0f172a;
+        color: #f1f5f9;
+        padding: 40px 20px;
+      }
+
+      .container {
+        max-width: 1100px;
+        margin: auto;
+      }
+
+      h1 {
+        text-align: center;
+        margin-bottom: 30px;
+        font-weight: 600;
+        letter-spacing: 1px;
+      }
+
+      .card {
+        background: #1e293b;
+        padding: 20px;
+        border-radius: 12px;
+        margin-bottom: 25px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+      }
+
+      form {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 15px;
+      }
+
+      input {
+        padding: 10px;
+        border-radius: 6px;
+        border: none;
+        outline: none;
+      }
+
+      button {
+        padding: 10px;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        font-weight: 600;
+      }
+
+      .btn-primary {
+        background: #3b82f6;
+        color: white;
+      }
+
+      .btn-danger {
+        background: #ef4444;
+        color: white;
+      }
+
+      .btn-edit {
+        background: #10b981;
+        color: white;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+
+      th,
+      td {
+        padding: 12px;
+        text-align: center;
+      }
+
+      th {
+        background: #334155;
+      }
+
+      tr:nth-child(even) {
+        background: #1e293b;
+      }
+
+      .actions button {
+        margin: 0 4px;
+      }
+
+      @media (max-width: 768px) {
+        table {
+          font-size: 12px;
+        }
+      }
